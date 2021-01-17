@@ -327,6 +327,7 @@ xkb_keycodes "pc104angle-z" {
     augment "evdev(evdev)"
 };
 
+
 // pc104_Wide(Quote) ergonomic mod (by DreymaR, 2013)
 xkb_keycodes "pc104wide-qu" {
 
@@ -350,6 +351,7 @@ xkb_keycodes "pc104awing" {
     include "evdev(pc104awing-leftpart)"
     augment "evdev(evdev)"
 };
+
 
 // pc104_Wide partial ergonomic mod (by DreymaR, 2013)
 xkb_keycodes "pc104wide-midpart" {
@@ -431,12 +433,14 @@ xkb_keycodes "pc105angle" {
     augment "evdev(evdev)"
 };
 
+
 // pc105_AngleWide(Slash) ergonomic mod (by DreymaR, 2011)
 xkb_keycodes "pc105aw-sl" {
 
     include "evdev(pc105wide-rightpart)"
     augment "evdev(pc105angle)"
 };
+
 
 // pc105_Wide(Slash) partial ergonomic mod (by DreymaR, 2011)
 xkb_keycodes "pc105wide-rightpart" {
@@ -464,7 +468,6 @@ xkb_keycodes "pc105wide-rightpart" {
     <AC09> =  47;	// L	<  ;
     <AC10> =  48;	// ;	<  '
     <AC11> =  51;	// '	<  \
-
 //    <AB10> =  57;	// /	<  N
     <BKSL> =  57;	// \	<  N
     <AB06> =  58;	// N	<  M
@@ -474,3 +477,31 @@ xkb_keycodes "pc105wide-rightpart" {
 };
 
 // <-- DreymaR: Additions to xkb/keycodes/evdev
+
+// SKP Custom modifier mappings
+xkb_keycodes "modifiers-skp" {
+    // Move AltGr to left-spacebar (backspace), custom mapping for Ergo Pro.
+    //<RALT> = 22;
+    // Additional Shift on left-spacebar, custom mapping for Ergo Pro. 
+    <MDSH> = 22;
+    // Define backspace on menu key.
+    <BKSP> = 135;
+    // Define the Exend modifier (CapsLock) on the LeftAlt key.
+    <CAPS> = 64;
+    // Relocate LeftWin to the CapsLock key.
+    <LWIN> = 66;
+    // Relocate LeftAlt to LeftWin key.
+    <LALT> = 133;
+
+    augment "evdev"
+};
+
+
+// SKP Custom modifier mappings plus space-backspace switch, custom mapping for Ergo Pro.
+xkb_keycodes "modifiers-skp2" {
+    <SPCE> = 22;
+    <MDSH> = 65;
+
+    augment "evdev(modifiers-skp)"
+};
+

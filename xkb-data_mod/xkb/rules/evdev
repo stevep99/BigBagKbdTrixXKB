@@ -15,7 +15,8 @@
 // PC models
 ! $pcmodels = pc101 pc102 pc104 pc105 \
               pc104angle-z pc104wide-qu pc104aw-zqu pc104awing pc105angle pc105aw-sl \
-              pc104curl-z              pc104caw-zqu pc104cawing pc105curl pc105caw-sl
+              pc104curl-z              pc104caw-zqu pc104cawing pc105curl pc105caw-sl \
+              pc105angle-skp pc105angle-skp2
 
 // Jolla devices and keyboards
 ! $jollamodels = jollasbj
@@ -111,6 +112,8 @@
   pc105aw-sl	=	evdev(pc105aw-sl)
   pc105curl		=	evdev(pc105curl)
   pc105caw-sl	=	evdev(pc105caw-sl)
+  modifiers-skp	=	evdev(modifiers-skp)
+  modifiers-skp2	=	evdev(modifiers-skp2)
   *		=	evdev
 
 ! layout[1]	=	keycodes
@@ -966,28 +969,33 @@
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle)
   *			misc:typo 	= +typo(base)
   *			misc:extend 	= +extend(basic)
+  *			misc:extend_sp	= +extend_sp(basic)
   *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh)
 
 ! layout[1]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):1
   *			misc:typo 	= +typo(base):1
   *			misc:extend 	= +extend(basic):1
+  *			misc:extend_sp	= +extend_sp(basic):1
   *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh):1
 
 ! layout[2]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):2
   *			misc:typo 	= +typo(base):2
   *			misc:extend 	= +extend(basic):2
+  *			misc:extend_sp	= +extend_sp(basic):2
 
 ! layout[3]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):3
   *			misc:typo 	= +typo(base):3
   *			misc:extend 	= +extend(basic):3
+  *			misc:extend_sp	= +extend_sp(basic):3
 
 ! layout[4]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):4
   *			misc:typo 	= +typo(base):4
   *			misc:extend 	= +extend(basic):4
+  *			misc:extend_sp	= +extend_sp(basic):4
 
 ! option	=	symbols
   grp:shift_toggle	=	+group(shifts_toggle)

@@ -9,6 +9,8 @@
   pc104awing      Generic 104-key PC AngleWing(Quote)Ergo
   pc105angle      Generic 105-key PC (intl.) Angle_Ergo
   pc105aw-sl      Generic 105-key PC (intl.) AngleWide(/)Ergo
+  modifiers-skp   SKP adjusted modifiers
+  modifiers-skp2  SKP adjusted modifiers (variant)
   dell101         Dell 101-key PC
   latitude        Dell Latitude laptop
   dellm65         Dell Precision M65 laptop
@@ -947,6 +949,7 @@
   shift:breaks_caps    Shift cancels Caps Lock
   misc:typo            Enable extra typographic characters
   misc:extend          Enable level5 Extend mappings (home position arrows etc)
+  misc:extend-sp       Enable level5 Extend mappings (sp variant)
   misc:cmk_curl_dh     Colemak Curl(DH) ergo mod
   shift:both_capslock  Both Shift together enable Caps Lock
   shift:both_capslock_cancel Both Shift together enable Caps Lock; one Shift key disables it

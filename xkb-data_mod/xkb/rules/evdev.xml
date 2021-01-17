@@ -74,6 +74,20 @@
     </model>
     <model>
       <configItem>
+        <name>modifiers-skp</name>
+        <description>SKP adjusted modifiers</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>modifiers-skp2</name>
+	<description>SKP adjusted modifiers (variant)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>dell101</name>
         <description>Dell 101-key PC</description>
         <vendor>Dell</vendor>
@@ -7402,6 +7416,12 @@
         <configItem>
           <name>misc:extend</name>
           <description>Enable level5 Extend mappings (home position arrows etc)</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>misc:extend_sp</name>
+          <description>Enable level5 Extend mappings (SP variant)</description>
         </configItem>
       </option>
       <option>

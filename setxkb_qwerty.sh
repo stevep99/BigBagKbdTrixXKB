@@ -40,9 +40,11 @@ X11DIR='/usr/share/X11'; [ -d "${X11DIR}" ] || X11DIR='/usr/lib/X11'
 XKBmodel=modifiers-skp2
 
 #~ XKBlayout='us(cmk_ed_us),gr(colemak),ru(colemak)'	# Multiple layouts
-XKBlayout='gb_sp(colemak_dh)'
+#XKBlayout='gb_sp(colemak_dh)'
+XKBlayout='gb_sp(qwerty)'
 
 XKBoption='misc:extend_sp,lv5:caps_switch_lock,grp:shifts_toggle,compose:menu'
+XKBoption=''
 
 VerboseLvl=9					# (-v) How much info should setxkbmap print out?
 KeepXKM='no'					# (-k) Retain old /var/lib/xkb/server-*.xkm files?
