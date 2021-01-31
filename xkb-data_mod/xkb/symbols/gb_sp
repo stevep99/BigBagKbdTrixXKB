@@ -3,62 +3,64 @@ partial alphanumeric_keys
 xkb_symbols "colemak_dh" {
 
     //  Alphanumeric section (letter keys and semicolon)
-    key <AD01> { [             q,             Q,              exclam,          exclamdown ] }; // QWE Q / DH Q
-    key <AD02> { [             w,             W,            quotedbl,          dead_macon ] }; // QWE W / DH W
-    key <AD03> { [             f,             F,            sterling,            ellipsis ] }; // QWE E / DH F
-    key <AD04> { [             p,             P,              dollar,            Greek_pi ] }; // QWE R / DH P
-    key <AD05> { [             b,             B,             percent,          Greek_beta ] }; // QWE T / DH B
-    key <AD06> { [             j,             J,               equal,            notequal ] }; // QWE Y / DH J
-    key <AD07> { [             l,             L,                   7,      dead_abovering ] }; // QWE U / DH L
-    key <AD08> { [             u,             U,                   8,             uparrow ] }; // QWE I / DH U
-    key <AD09> { [             y,             Y,                   9,        dead_cedilla ] }; // QWE O / DH Y
-    key <AD10> { [     semicolon,         colon,                plus,           plusminus ] }; // QWE P / DH ;:
+    key <AD01> { [             q,             Q ] }; // QWE Q / DH Q
+    key <AD02> { [             w,             W ] }; // QWE W / DH W
+    key <AD03> { [             f,             F ] }; // QWE E / DH F
+    key <AD04> { [             p,             P ] }; // QWE R / DH P
+    key <AD05> { [             b,             B ] }; // QWE T / DH B
+    key <AD06> { [             j,             J ] }; // QWE Y / DH J
+    key <AD07> { [             l,             L ] }; // QWE U / DH L
+    key <AD08> { [             u,             U ] }; // QWE I / DH U
+    key <AD09> { [             y,             Y ] }; // QWE O / DH Y
+    key <AD10> { [     semicolon,         colon ] }; // QWE P / DH ;:
     //  U2039/203A single guillemets; U0283/01A9 esh/ESH
-    key <AC01> { [             a,             A,          underscore,               U218A ] }; // QWE A / DH A
-    key <AC02> { [             r,             R,         bracketleft,               U218B ] }; // QWE S / DH R
-    key <AC03> { [             s,             S,           braceleft,         Greek_sigma ] }; // QWE D / DH S
-    key <AC04> { [             t,             T,           parenleft,           trademark ] }; // QWE F / DH T
-    key <AC05> { [             g,             G,         asciicircum,          registered ] }; // QWE G / DH G
-    key <AC06> { [             m,             M,            asterisk,            Greek_mu ] }; // QWE H / DH M
-    key <AC07> { [             n,             N,                   4,           leftarrow ] }; // QWE J / DH N
-    key <AC08> { [             e,             E,                   5,           downarrow ] }; // QWE K / DH E
-    key <AC09> { [             i,             I,                   6,          rightarrow ] }; // QWE L / DH I
-    key <AC10> { [             o,             O,               minus,          apostrophe ] }; // QWE ; / DH O
+    key <AC01> { [             a,             A ] }; // QWE A / DH A
+    key <AC02> { [             r,             R ] }; // QWE S / DH R
+    key <AC03> { [             s,             S ] }; // QWE D / DH S
+    key <AC04> { [             t,             T ] }; // QWE F / DH T
+    key <AC05> { [             g,             G ] }; // QWE G / DH G
+    key <AC06> { [             m,             M ] }; // QWE H / DH M
+    key <AC07> { [             n,             N ] }; // QWE J / DH N
+    key <AC08> { [             e,             E ] }; // QWE K / DH E
+    key <AC09> { [             i,             I ] }; // QWE L / DH I
+    key <AC10> { [             o,             O ] }; // QWE ; / DH O
     //
-    key <LSGT> { [             z,             Z,          numbersign,          asciitilde ] }; // QWE ISO / DH Z
-    key <AB01> { [             x,             X,        bracketright,               U0292 ] }; // QWE Z / DH X
-    key <AB02> { [             c,             C,          braceright,           copyright ] }; // QWE X / DH C
-    key <AB03> { [             d,             D,          parenright,                  at ] }; // QWE C / DH D
-    key <AB04> { [             v,             V,           ampersand,              emdash ] }; // QWE V / DH V
-    key <AB05> { [     backslash,           bar,               grave,           brokenbar ] }; // QWE B / DH ISO
-    key <AB06> { [             k,             K,                   0,              degree ] }; // QWE N / DH K
-    key <AB07> { [             h,             H,                   1,  enfilledcircbullet ] }; // QWE M / DH H
-    key <AB08> { [         comma,          less,                   2,       lessthanequal ] }; // ,
-    key <AB09> { [        period,       greater,                   3,    greaterthanequal ] }; // .
-    key <AB10> { [         slash,      question,               slash,        questiondown ] }; // /?
+    key <LSGT> { [             z,             Z ] }; // QWE ISO / DH Z
+    key <AB01> { [             x,             X ] }; // QWE Z / DH X
+    key <AB02> { [             c,             C ] }; // QWE X / DH C
+    key <AB03> { [             d,             D ] }; // QWE C / DH D
+    key <AB04> { [             v,             V ] }; // QWE V / DH V
+    key <AB05> { [     backslash,           bar ] }; // QWE B / DH ISO
+    key <AB06> { [             k,             K ] }; // QWE N / DH K
+    key <AB07> { [             h,             H ] }; // QWE M / DH H
+    key <AB08> { [         comma,          less ] }; // ,
+    key <AB09> { [        period,       greater ] }; // .
+    key <AB10> { [         slash,      question ] }; // /?
 
     //  Alphanumeric section (number/symbol keys)
-    key <TLDE> { [         grave,       notsign,                 bar,          dead_grave ] }; // `~
-    key <AE01> { [             1,        exclam,         onesuperior,          exclamdown ] }; // 1
-    key <AE02> { [             2,      quotedbl,         twosuperior,    dead_doubleacute ] }; // 2
-    key <AE03> { [             3,      sterling,       threesuperior,       dead_abovedot ] }; // 3
-    key <AE04> { [             4,        dollar,            EuroSign,                cent ] }; // 4
-    key <AE05> { [             5,       percent,                 yen,            currency ] }; // 5
-    key <AE06> { [             6,   asciicircum,          onequarter,     dead_circumflex ] }; // 6
-    key <AE07> { [             7,     ampersand,             onehalf,            onethird ] }; // 7
-    key <AE08> { [             8,      asterisk,       threequarters,           twothirds ] }; // 8
-    key <AE09> { [             9,     parenleft, leftsinglequotemark, leftdoublequotemark ] }; // 9
-    key <AE10> { [             0,    parenright,rightsinglequotemark,rightdoublequotemark ] }; // 0
-    key <AE11> { [         minus,    underscore,            multiply,            onesixth ] }; // -_
-    key <AE12> { [         equal,          plus,            division,          fivesixths ] }; // =+
+    key <TLDE> { [         grave,       notsign ] }; // `~
+    key <AE01> { [             1,        exclam ] }; // 1
+    key <AE02> { [             2,      quotedbl ] }; // 2
+    key <AE03> { [             3,      sterling ] }; // 3
+    key <AE04> { [             4,        dollar ] }; // 4
+    key <AE05> { [             5,       percent ] }; // 5
+    key <AE06> { [             6,   asciicircum ] }; // 6
+    key <AE07> { [             7,     ampersand ] }; // 7
+    key <AE08> { [             8,      asterisk ] }; // 8
+    key <AE09> { [             9,     parenleft ] }; // 9
+    key <AE10> { [             0,    parenright ] }; // 0
+    key <AE11> { [         minus,    underscore ] }; // -_
+    key <AE12> { [         equal,          plus ] }; // =+
     //
-    key <AD11> { [   bracketleft,     braceleft,       guillemotleft,           0x1002039 ] }; // [{
-    key <AD12> { [  bracketright,    braceright,      guillemotright,           0x100203a ] }; // ]}
+    key <AD11> { [   bracketleft,     braceleft ] }; // [{
+    key <AD12> { [  bracketright,    braceright ] }; // ]}
     //
-    key <AC11> { [    apostrophe,            at,          dead_acute,      dead_diaeresis ] }; // '@
-    key <BKSL> { [    numbersign,    asciitilde,          dead_tilde,          dead_tilde ] }; // #~
+    key <AC11> { [    apostrophe,            at ] }; // '@
+    key <BKSL> { [    numbersign,    asciitilde ] }; // #~
     //
-    key <SPCE> { [         space,          space,       nobreakspace,        nobreakspace ] };
+    key <SPCE> { [         space,         space ] };
+
+    include "gb_sp(symbols)"
 
     //include "level3(rwin_switch)"
     include "level3(ralt_switch)"
@@ -69,8 +71,8 @@ xkb_symbols "colemak_dh" {
 
 partial alphanumeric_keys
 xkb_symbols "colemak_dhk" {
-    key <AC06> { [             k,             K,            asterisk,            Greek_mu ] }; // QWE H / DHk K
-    key <AB06> { [             m,             M,                   0,              degree ] }; // QWE N / DHk M
+    key <AC06> { [             k,             K ] }; // QWE H / DHk K
+    key <AB06> { [             m,             M ] }; // QWE N / DHk M
     
     augment "gb_sp(colemak_dh)"
 
@@ -79,7 +81,7 @@ xkb_symbols "colemak_dhk" {
 
 partial alphanumeric_keys
 xkb_symbols "colemak_dh_shiftz" {
-    key <LFSH> { [             z,             Z,          numbersign,               U0292 ] };
+    key <LFSH> { [             z,             Z ] };
 
     augment "gb_sp(colemak_dh)"
 
@@ -88,7 +90,7 @@ xkb_symbols "colemak_dh_shiftz" {
 
 partial alphanumeric_keys
 xkb_symbols "colemak_dhk_shiftz" {
-    key <LFSH> { [             z,             Z,          numbersign,               U0292 ] };
+    key <LFSH> { [             z,             Z ] };
 
     augment "gb_sp(colemak_dhk)"
 
@@ -99,63 +101,65 @@ partial alphanumeric_keys
 xkb_symbols "qwerty" {
 
     //  Alphanumeric section (letter keys and semicolon)
-    key <AD01> { [             q,             Q,              exclam,          exclamdown ] }; // QWE Q / DH Q
-    key <AD02> { [             w,             W,            quotedbl,          dead_macon ] }; // QWE W / DH W
-    key <AD03> { [             e,             E,            sterling,            ellipsis ] }; // QWE E / DH F
-    key <AD04> { [             r,             R,              dollar,            Greek_pi ] }; // QWE R / DH P
-    key <AD05> { [             t,             T,             percent,          Greek_beta ] }; // QWE T / DH B
-    key <AD06> { [             y,             Y,               equal,            notequal ] }; // QWE Y / DH J
-    key <AD07> { [             u,             U,                   7,      dead_abovering ] }; // QWE U / DH L
-    key <AD08> { [             i,             I,                   8,             uparrow ] }; // QWE I / DH U
-    key <AD09> { [             o,             O,                   9,        dead_cedilla ] }; // QWE O / DH Y
-    key <AD10> { [             p,             P,                plus,           plusminus ] }; // QWE P / DH ;:
-    //  U2039/203A single guillemets; U0283/01A9 esh/ESH
-    key <AC01> { [             a,             A,          underscore,               U218A ] }; // QWE A / DH A
-    key <AC02> { [             s,             S,         bracketleft,               U218B ] }; // QWE S / DH R
-    key <AC03> { [             d,             D,           braceleft,         Greek_sigma ] }; // QWE D / DH S
-    key <AC04> { [             f,             F,           parenleft,           trademark ] }; // QWE F / DH T
-    key <AC05> { [             g,             G,         asciicircum,          registered ] }; // QWE G / DH G
-    key <AC06> { [             h,             H,            asterisk,            Greek_mu ] }; // QWE H / DH M
-    key <AC07> { [             j,             J,                   4,           leftarrow ] }; // QWE J / DH N
-    key <AC08> { [             k,             K,                   5,           downarrow ] }; // QWE K / DH E
-    key <AC09> { [             l,             L,                   6,          rightarrow ] }; // QWE L / DH I
-    key <AC10> { [     semicolon,         colon,               minus,          apostrophe ] }; // QWE ; / DH O
+    key <AD01> { [             q,             Q ] }; // QWE Q / DH Q
+    key <AD02> { [             w,             W ] }; // QWE W / DH W
+    key <AD03> { [             e,             E ] }; // QWE E / DH F
+    key <AD04> { [             r,             R ] }; // QWE R / DH P
+    key <AD05> { [             t,             T ] }; // QWE T / DH B
+    key <AD06> { [             y,             Y ] }; // QWE Y / DH J
+    key <AD07> { [             u,             U ] }; // QWE U / DH L
+    key <AD08> { [             i,             I ] }; // QWE I / DH U
+    key <AD09> { [             o,             O ] }; // QWE O / DH Y
+    key <AD10> { [             p,             P ] }; // QWE P / DH ;:
+    
+    key <AC01> { [             a,             A ] }; // QWE A / DH A
+    key <AC02> { [             s,             S ] }; // QWE S / DH R
+    key <AC03> { [             d,             D ] }; // QWE D / DH S
+    key <AC04> { [             f,             F ] }; // QWE F / DH T
+    key <AC05> { [             g,             G ] }; // QWE G / DH G
+    key <AC06> { [             h,             H ] }; // QWE H / DH M
+    key <AC07> { [             j,             J ] }; // QWE J / DH N
+    key <AC08> { [             k,             K ] }; // QWE K / DH E
+    key <AC09> { [             l,             L ] }; // QWE L / DH I
+    key <AC10> { [     semicolon,         colon ] }; // QWE ; / DH O
     //
-    key <LSGT> { [     backslash,           bar,          numbersign,          asciitilde ] }; // QWE ISO / DH Z
-    key <AB01> { [             z,             Z,        bracketright,               U0292 ] }; // QWE Z / DH X
-    key <AB02> { [             x,             X,          braceright,           copyright ] }; // QWE X / DH C
-    key <AB03> { [             c,             C,          parenright,                  at ] }; // QWE C / DH D
-    key <AB04> { [             v,             V,           ampersand,              emdash ] }; // QWE V / DH V
-    key <AB05> { [             b,             B,               grave,           brokenbar ] }; // QWE B / DH ISO
-    key <AB06> { [             n,             N,                   0,              degree ] }; // QWE N / DH K
-    key <AB07> { [             m,             M,                   1,  enfilledcircbullet ] }; // QWE M / DH H
-    key <AB08> { [         comma,          less,                   2,       lessthanequal ] }; // ,
-    key <AB09> { [        period,       greater,                   3,    greaterthanequal ] }; // .
-    key <AB10> { [         slash,      question,               slash,        questiondown ] }; // /?
+    key <LSGT> { [     backslash,           bar ] }; // QWE ISO / DH Z
+    key <AB01> { [             z,             Z ] }; // QWE Z / DH X
+    key <AB02> { [             x,             X ] }; // QWE X / DH C
+    key <AB03> { [             c,             C ] }; // QWE C / DH D
+    key <AB04> { [             v,             V ] }; // QWE V / DH V
+    key <AB05> { [             b,             B ] }; // QWE B / DH ISO
+    key <AB06> { [             n,             N ] }; // QWE N / DH K
+    key <AB07> { [             m,             M ] }; // QWE M / DH H
+    key <AB08> { [         comma,          less ] }; // ,
+    key <AB09> { [        period,       greater ] }; // .
+    key <AB10> { [         slash,      question ] }; // /?
 
     //  Alphanumeric section (number/symbol keys)
-    key <TLDE> { [         grave,       notsign,                 bar,          dead_grave ] }; // `~
-    key <AE01> { [             1,        exclam,         onesuperior,          exclamdown ] }; // 1
-    key <AE02> { [             2,      quotedbl,         twosuperior,    dead_doubleacute ] }; // 2
-    key <AE03> { [             3,      sterling,       threesuperior,       dead_abovedot ] }; // 3
-    key <AE04> { [             4,        dollar,            EuroSign,                cent ] }; // 4
-    key <AE05> { [             5,       percent,                 yen,            currency ] }; // 5
-    key <AE06> { [             6,   asciicircum,          onequarter,     dead_circumflex ] }; // 6
-    key <AE07> { [             7,     ampersand,             onehalf,            onethird ] }; // 7
-    key <AE08> { [             8,      asterisk,       threequarters,           twothirds ] }; // 8
-    key <AE09> { [             9,     parenleft, leftsinglequotemark, leftdoublequotemark ] }; // 9
-    key <AE10> { [             0,    parenright,rightsinglequotemark,rightdoublequotemark ] }; // 0
-    key <AE11> { [         minus,    underscore,            multiply,            onesixth ] }; // -_
-    key <AE12> { [         equal,          plus,            division,          fivesixths ] }; // =+
+    key <TLDE> { [         grave,       notsign ] }; // `~
+    key <AE01> { [             1,        exclam ] }; // 1
+    key <AE02> { [             2,      quotedbl ] }; // 2
+    key <AE03> { [             3,      sterling ] }; // 3
+    key <AE04> { [             4,        dollar ] }; // 4
+    key <AE05> { [             5,       percent ] }; // 5
+    key <AE06> { [             6,   asciicircum ] }; // 6
+    key <AE07> { [             7,     ampersand ] }; // 7
+    key <AE08> { [             8,      asterisk ] }; // 8
+    key <AE09> { [             9,     parenleft ] }; // 9
+    key <AE10> { [             0,    parenright ] }; // 0
+    key <AE11> { [         minus,    underscore ] }; // -_
+    key <AE12> { [         equal,          plus ] }; // =+
     //
-    key <AD11> { [   bracketleft,     braceleft,       guillemotleft,           0x1002039 ] }; // [{
-    key <AD12> { [  bracketright,    braceright,      guillemotright,           0x100203a ] }; // ]}
+    key <AD11> { [   bracketleft,     braceleft ] }; // [{
+    key <AD12> { [  bracketright,    braceright ] }; // ]}
     //
-    key <AC11> { [    apostrophe,            at,          dead_acute,      dead_diaeresis ] }; // '@
-    key <BKSL> { [    numbersign,    asciitilde,          dead_tilde,          dead_tilde ] }; // #~
+    key <AC11> { [    apostrophe,            at ] }; // '@
+    key <BKSL> { [    numbersign,    asciitilde ] }; // #~
     //
-    key <SPCE> { [         space,          space,       nobreakspace,        nobreakspace ] };
+    key <SPCE> { [         space,         space ] };
 
+    include "gb_sp(symbols)"
+    
     //include "level3(rwin_switch)"
     include "level3(ralt_switch)"
 
@@ -164,3 +168,66 @@ xkb_symbols "qwerty" {
 };
 
 
+
+default
+partial alphanumeric_keys
+xkb_symbols "symbols" {
+
+    //  Alphanumeric section (letter keys and semicolon)
+    key <AD01> { [      NoSymbol,      NoSymbol,              exclam,          exclamdown ] }; 
+    key <AD02> { [      NoSymbol,      NoSymbol,            quotedbl,          dead_macon ] }; 
+    key <AD03> { [      NoSymbol,      NoSymbol,            sterling,            ellipsis ] }; 
+    key <AD04> { [      NoSymbol,      NoSymbol,              dollar,            Greek_pi ] }; 
+    key <AD05> { [      NoSymbol,      NoSymbol,             percent,          Greek_beta ] }; 
+    key <AD06> { [      NoSymbol,      NoSymbol,               equal,            notequal ] }; 
+    key <AD07> { [      NoSymbol,      NoSymbol,                   7,      dead_abovering ] }; 
+    key <AD08> { [      NoSymbol,      NoSymbol,                   8,             uparrow ] }; 
+    key <AD09> { [      NoSymbol,      NoSymbol,                   9,        dead_cedilla ] }; 
+    key <AD10> { [      NoSymbol,      NoSymbol,                plus,           plusminus ] }; 
+    
+    key <AC01> { [      NoSymbol,      NoSymbol,          underscore,               U218A ] }; 
+    key <AC02> { [      NoSymbol,      NoSymbol,         bracketleft,               U218B ] }; 
+    key <AC03> { [      NoSymbol,      NoSymbol,           braceleft,         Greek_sigma ] }; 
+    key <AC04> { [      NoSymbol,      NoSymbol,           parenleft,           trademark ] }; 
+    key <AC05> { [      NoSymbol,      NoSymbol,         asciicircum,          registered ] }; 
+    key <AC06> { [      NoSymbol,      NoSymbol,            asterisk,            Greek_mu ] }; 
+    key <AC07> { [      NoSymbol,      NoSymbol,                   4,           leftarrow ] }; 
+    key <AC08> { [      NoSymbol,      NoSymbol,                   5,           downarrow ] }; 
+    key <AC09> { [      NoSymbol,      NoSymbol,                   6,          rightarrow ] }; 
+    key <AC10> { [      NoSymbol,      NoSymbol,               minus,          apostrophe ] }; 
+    //
+    key <LSGT> { [      NoSymbol,      NoSymbol,          numbersign,          asciitilde ] }; 
+    key <AB01> { [      NoSymbol,      NoSymbol,        bracketright,               U0292 ] }; 
+    key <AB02> { [      NoSymbol,      NoSymbol,          braceright,           copyright ] }; 
+    key <AB03> { [      NoSymbol,      NoSymbol,          parenright,                  at ] }; 
+    key <AB04> { [      NoSymbol,      NoSymbol,           ampersand,              emdash ] }; 
+    key <AB05> { [      NoSymbol,      NoSymbol,               grave,           brokenbar ] }; 
+    key <AB06> { [      NoSymbol,      NoSymbol,                   0,              degree ] }; 
+    key <AB07> { [      NoSymbol,      NoSymbol,                   1,  enfilledcircbullet ] }; 
+    key <AB08> { [      NoSymbol,      NoSymbol,                   2,       lessthanequal ] }; 
+    key <AB09> { [      NoSymbol,      NoSymbol,                   3,    greaterthanequal ] }; 
+    key <AB10> { [      NoSymbol,      NoSymbol,               slash,        questiondown ] }; 
+
+    //  Alphanumeric section (number/symbol keys)
+    key <TLDE> { [      NoSymbol,      NoSymbol,                 bar,          dead_grave ] }; 
+    key <AE01> { [      NoSymbol,      NoSymbol,         onesuperior,          exclamdown ] }; 
+    key <AE02> { [      NoSymbol,      NoSymbol,         twosuperior,    dead_doubleacute ] }; 
+    key <AE03> { [      NoSymbol,      NoSymbol,       threesuperior,       dead_abovedot ] }; 
+    key <AE04> { [      NoSymbol,      NoSymbol,            EuroSign,                cent ] }; 
+    key <AE05> { [      NoSymbol,      NoSymbol,                 yen,            currency ] }; 
+    key <AE06> { [      NoSymbol,      NoSymbol,          onequarter,     dead_circumflex ] }; 
+    key <AE07> { [      NoSymbol,      NoSymbol,             onehalf,            onethird ] }; 
+    key <AE08> { [      NoSymbol,      NoSymbol,       threequarters,           twothirds ] }; 
+    key <AE09> { [      NoSymbol,      NoSymbol, leftsinglequotemark, leftdoublequotemark ] }; 
+    key <AE10> { [      NoSymbol,      NoSymbol,rightsinglequotemark,rightdoublequotemark ] }; 
+    key <AE11> { [      NoSymbol,      NoSymbol,            multiply,            onesixth ] }; 
+    key <AE12> { [      NoSymbol,      NoSymbol,            division,          fivesixths ] }; 
+    //
+    key <AD11> { [      NoSymbol,      NoSymbol,       guillemotleft,           0x1002039 ] }; 
+    key <AD12> { [      NoSymbol,      NoSymbol,      guillemotright,           0x100203a ] }; 
+    //
+    key <AC11> { [      NoSymbol,      NoSymbol,          dead_acute,      dead_diaeresis ] }; 
+    key <BKSL> { [      NoSymbol,      NoSymbol,          dead_tilde,          dead_tilde ] }; 
+    //
+    key <SPCE> { [      NoSymbol,      NoSymbol,       nobreakspace,        nobreakspace ] };
+};

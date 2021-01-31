@@ -43,7 +43,7 @@ XKBmodel=modifiers-skp2
 #XKBlayout='gb_sp(colemak_dh)'
 XKBlayout='gb_sp(qwerty)'
 
-XKBoption='misc:extend_sp,lv5:caps_switch_lock,grp:shifts_toggle,compose:menu'
+#XKBoption='misc:extend_sp,lv5:caps_switch_lock,grp:shifts_toggle,compose:menu'
 XKBoption=''
 
 VerboseLvl=9					# (-v) How much info should setxkbmap print out?
