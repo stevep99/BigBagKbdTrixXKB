@@ -21,13 +21,13 @@ xkb_symbols "lv5" {
 
 // NOTE: Earlier, if I set lv5-6 of Esc to Caps_Lock, lv1-4 would be CapsLock PLUS Esc! Is this fixed now?
 //       If not, I might not have to send the Caps_Lock keysymbol as long as the LockMods action is there?
-//    key <ESC>  { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-//                   Caps_Lock            , Caps_Lock             , // Caps_Lock
-//                   Caps_Lock            , Caps_Lock            ], // Caps_Lock
-//                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-//                   LockMods(mods=Lock)   , LockMods(mods=Lock)   , // Lock mod for <CAPS>
-//                   LockMods(mods=Lock)   , LockMods(mods=Lock)  ]  // Lock mod for <CAPS>
-//               };  // ; Esc (one could also use <SCLK> aka ScrollLock for Caps, if desired)
+    key <ESC>  { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
+                   Caps_Lock            , Caps_Lock             , // Caps_Lock
+                   Caps_Lock            , Caps_Lock            ], // Caps_Lock
+                 actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
+                   LockMods(mods=Lock)   , LockMods(mods=Lock)   , // Lock mod for <CAPS>
+                   LockMods(mods=Lock)   , LockMods(mods=Lock)  ]  // Lock mod for <CAPS>
+               };  // ; Esc (one could also use <SCLK> aka ScrollLock for Caps, if desired)
 
     key <TLDE> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Pointer_EnableKeys  , Pointer_EnableKeys     , // Ptr_On
@@ -111,8 +111,8 @@ xkb_symbols "lv5" {
                    Escape               , Escape                , // Esc
                    Escape               , Escape               ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<ESC>)  , Redirect(key=<ESC>)   , // <ESC>
-                   Redirect(key=<ESC>)  , Redirect(key=<ESC>)  ]
+                   Redirect(key=<ESC>,clearmods=LevelFive)  , Redirect(key=<ESC>,clearmods=LevelFive)   , // <ESC>
+                   Redirect(key=<ESC>,clearmods=LevelFive)  , Redirect(key=<ESC>,clearmods=LevelFive) ]
                };  // Cmk Q
     key <AD02> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    XF86Back             , XF86Back              , // BrBack
