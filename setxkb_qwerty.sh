@@ -36,7 +36,7 @@ MyNAME=`basename $0`
 ##  @@@ The default X11 dir under some (older) distros is /usr/lib/X11 @@@
 X11DIR='/usr/share/X11'; [ -d "${X11DIR}" ] || X11DIR='/usr/lib/X11'
 
-#~ XKBmodel=pc104aw-zqu			# ANSI-104 keyboard w/ Angle(Z)Wide(Quote) mod
+#XKBmodel=pc105
 XKBmodel=modifiers-skp2
 
 #~ XKBlayout='us(cmk_ed_us),gr(colemak),ru(colemak)'	# Multiple layouts

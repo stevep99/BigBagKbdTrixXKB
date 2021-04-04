@@ -171,11 +171,11 @@ xkb_symbols "lv5" {
                    MovePtr(x=+8,y=-8)   , MovePtr(x=+16,y=-16) ]
                };  // Cmk Y
     key <AD10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Menu                 , Menu                  , // Menu
-                   Menu                 , Menu                 ],
+                   Caps_Lock            , Caps_Lock             , // Caps_Lock
+                   NoSymbol             , NoSymbol             ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<MENU>) , Redirect(key=<MENU>)  , // <MENU>/<COMP>
-                   Redirect(key=<MENU>) , Redirect(key=<MENU>) ]
+                   LockMods(modifiers=Lock), LockMods(modifiers=Lock), // Lock mod for <CAPS>
+                   NoAction()           , NoAction()           ]
                };  // ; :
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Print                , Print                 , // Print Screen
@@ -200,26 +200,25 @@ xkb_symbols "lv5" {
                };  // \ |
 
     key <AC01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   SelectAll            , SelectAll             , // SelectAll
-                   SelectAll            , SelectAll            ],
+                   Alt_L                , Alt_L                 , // Alt
+                   Alt_L                , Alt_L                ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<AC01>,mods=Control,clearmods=LevelFive), Redirect(key=<AC01>,mods=Shift+Control,clearmods=LevelFive), // Ctrl+A
-                   Redirect(key=<AC01>,mods=Control,clearmods=LevelFive),
-                   Redirect(key=<AC01>,mods=Shift+Control,clearmods=LevelFive) ]
+                   SetMods(mods=Alt)    , SetMods(mods=Shift+Alt)     , // Alt mod for <LALT>
+                   SetMods(mods=Alt)    , SetMods(mods=Shift+Alt)    ]
                };  // Cmk A
     key <AC02> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Tab                  , Tab                   , // Tab
-                   Tab                  , Tab                  ],
+                   Super_L                , Super_L                 , // Super (Windows) key
+                   Super_L                , Super_L                ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<TAB>)  , Redirect(key=<TAB>)   , // <TAB>
-                   Redirect(key=<TAB>)  , Redirect(key=<TAB>)  ]
+                   SetMods(mods=Mod4)    , SetMods(mods=Shift+Mod4)     , // Super mod for <LWIN>
+                   SetMods(mods=Mod4)    , SetMods(mods=Shift+Mod4)    ]
                };  // Cmk R
     key <AC03> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Shift_L              , Shift_L               , // Shift
                    Shift_L              , Shift_L              ], // Shift
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   SetMods(mods=Shift)  , SetMods(mods=Shift)   , // Shift mod for <LFSH>
-                   SetMods(mods=Shift)  , SetMods(mods=Shift)  ]
+                   SetMods(mods=Shift)  , SetMods(mods=Shift+Control)   , // Shift mod for <LFSH>
+                   SetMods(mods=Shift)  , SetMods(mods=Shift+Control)  ]
                };  // Cmk S
     key <AC04> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Control_L            , Control_L             , // Ctrl
@@ -229,11 +228,11 @@ xkb_symbols "lv5" {
                    SetMods(mods=Control) , SetMods(mods=Shift+Control) ]
                };  // Cmk T
     key <AC05> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Alt_L                , Alt_L                 , // Alt
-                   Alt_L                , Alt_L                ],
+                   Alt_R                , Alt_R                 , // RAlt
+                   Alt_R                , Alt_R                ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   SetMods(mods=Alt)    , SetMods(mods=Alt)     , // Alt mod for <LALT>
-                   SetMods(mods=Alt)    , SetMods(mods=Alt)    ]
+                   SetMods(mods=LevelThree), SetMods(mods=Shift+LevelThree)     , // Alt mod for <LALT>
+                   SetMods(mods=LevelThree), SetMods(mods=Shift+LevelThree)    ]
                };  // Cmk D -> G
     key <AC06> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Page_Down            , Page_Down             , // PgDn
@@ -271,11 +270,11 @@ xkb_symbols "lv5" {
                    PtrBtn(button=3)     , PtrBtn(button=3)     ]
                };  // Cmk O
     key <AC11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Caps_Lock            , Caps_Lock             , // Caps_Lock
-                   NoSymbol             , NoSymbol             ],
+                   Menu                 , Menu                  , // Menu
+                   Menu                 , Menu                 ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   LockMods(modifiers=Lock), LockMods(modifiers=Lock), // Lock mod for <CAPS>
-                   NoAction()           , NoAction()           ]
+                   Redirect(key=<MENU>) , Redirect(key=<MENU>)  , // <MENU>/<COMP>
+                   Redirect(key=<MENU>) , Redirect(key=<MENU>) ]
                };  // ' "
 
     key <LSGT> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
@@ -283,7 +282,7 @@ xkb_symbols "lv5" {
                    Undo                 , Redo                 ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<LSGT>,mods=Control,clearmods=LevelFive), Redirect(key=<LSGT>,mods=Shift+Control,clearmods=LevelFive), // Ctrl+Z
-                   Redirect(key=<LSGT>,mods=Control,clearmods=LevelFive), Redirect(key=<LSGT>,mods=Shift+Control,clearmods=LevelFive) ]
+                   Redirect(key=<LSGT>,mods=Shift+Control,clearmods=LevelFive), Redirect(key=<LSGT>,mods=Shift+Control,clearmods=LevelFive) ]
                };  // ISO -> Z
     key <AB01> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    XF86Cut              , XF86Cut               , // Cut(§§)
@@ -297,21 +296,21 @@ xkb_symbols "lv5" {
                    XF86Copy             , XF86Copy             ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<AB02>,mods=Control,clearmods=LevelFive), Redirect(key=<AB02>,mods=Shift+Control,clearmods=LevelFive), // Ctrl+C
-                   Redirect(key=<AB02>,mods=Control,clearmods=LevelFive), Redirect(key=<AB02>,mods=Shift+Control,clearmods=LevelFive) ]
+                   Redirect(key=<AB02>,mods=Shift+Control,clearmods=LevelFive), Redirect(key=<AB02>,mods=Shift+Control,clearmods=LevelFive) ]
                };  // X -> C
     key <AB03> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   XF86Paste            , XF86Paste             , // Paste(§§)
-                   XF86Paste            , XF86Paste            ],
+                   Tab                  , Tab                   , // Tab
+                   Tab                  , Tab                  ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<AB03>,mods=Control,clearmods=LevelFive), Redirect(key=<AB03>,mods=Shift+Control,clearmods=LevelFive), // Ctrl+V
-                   Redirect(key=<AB03>,mods=Control,clearmods=LevelFive), Redirect(key=<AB03>,mods=Shift+Control,clearmods=LevelFive) ]
+                   Redirect(key=<TAB>,clearmods=LevelFive)  , Redirect(key=<TAB>,mods=Shift,clearmods=LevelFive)   , // <TAB>
+                   Redirect(key=<TAB>,clearmods=LevelFive)  , Redirect(key=<TAB>,mods=Shift,clearmods=LevelFive)  ]
                };  // C -> D
     key <AB04> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    XF86Paste            , XF86Paste             , // Paste(§§)
                    XF86Paste            , XF86Paste            ],
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    Redirect(key=<AB04>,mods=Control,clearmods=LevelFive), Redirect(key=<AB04>,mods=Shift+Control,clearmods=LevelFive), // Ctrl+V
-                   Redirect(key=<AB04>,mods=Control,clearmods=LevelFive), Redirect(key=<AB04>,mods=Shift+Control,clearmods=LevelFive) ]
+                   Redirect(key=<AB04>,mods=Shift+Control,clearmods=LevelFive), Redirect(key=<AB04>,mods=Shift+Control,clearmods=LevelFive) ]
                };  // V
     key <AB05> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Pointer_EnableKeys  , Pointer_EnableKeys     , // Ptr_On
@@ -337,7 +336,7 @@ xkb_symbols "lv5" {
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
                    SetMods(mods=Shift)  , SetMods(mods=Shift)   ,
                    SetMods(mods=Shift)  , SetMods(mods=Shift)  ]
-               };  // , <
+               };  // ,
     key <AB09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
                    Alt_L                , Alt_L                 , // Alt
                    Alt_L                , Alt_L                ],

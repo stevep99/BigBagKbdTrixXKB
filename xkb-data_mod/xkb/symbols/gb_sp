@@ -1,3 +1,4 @@
+
 default
 partial alphanumeric_keys
 xkb_symbols "colemak_dh" {
@@ -12,7 +13,7 @@ xkb_symbols "colemak_dh" {
     key <AD07> { [             l,             L ] }; // QWE U / DH L
     key <AD08> { [             u,             U ] }; // QWE I / DH U
     key <AD09> { [             y,             Y ] }; // QWE O / DH Y
-    key <AD10> { [     semicolon,         colon ] }; // QWE P / DH ;:
+    key <AD10> { [    apostrophe,            at ] }; // QWE P / DH ;:
     //  U2039/203A single guillemets; U0283/01A9 esh/ESH
     key <AC01> { [             a,             A ] }; // QWE A / DH A
     key <AC02> { [             r,             R ] }; // QWE S / DH R
@@ -55,7 +56,7 @@ xkb_symbols "colemak_dh" {
     key <AD11> { [   bracketleft,     braceleft ] }; // [{
     key <AD12> { [  bracketright,    braceright ] }; // ]}
     //
-    key <AC11> { [    apostrophe,            at ] }; // '@
+    key <AC11> { [     semicolon,         colon ] }; // '@
     key <BKSL> { [    numbersign,    asciitilde ] }; // #~
     //
     key <SPCE> { [         space,         space ] };
@@ -175,38 +176,38 @@ xkb_symbols "symbols" {
 
     //  Alphanumeric section (letter keys and semicolon)
     key <AD01> { [      NoSymbol,      NoSymbol,              exclam,          exclamdown ] }; 
-    key <AD02> { [      NoSymbol,      NoSymbol,            quotedbl,          dead_macon ] }; 
+    key <AD02> { [      NoSymbol,      NoSymbol,            quotedbl,            EuroSign ] }; 
     key <AD03> { [      NoSymbol,      NoSymbol,            sterling,            ellipsis ] }; 
-    key <AD04> { [      NoSymbol,      NoSymbol,              dollar,            Greek_pi ] }; 
-    key <AD05> { [      NoSymbol,      NoSymbol,             percent,          Greek_beta ] }; 
+    key <AD04> { [      NoSymbol,      NoSymbol,              dollar,                cent ] }; 
+    key <AD05> { [      NoSymbol,      NoSymbol,             percent,             onehalf ] }; 
     key <AD06> { [      NoSymbol,      NoSymbol,               equal,            notequal ] }; 
-    key <AD07> { [      NoSymbol,      NoSymbol,                   7,      dead_abovering ] }; 
+    key <AD07> { [      NoSymbol,      NoSymbol,                   7,            infinity ] }; 
     key <AD08> { [      NoSymbol,      NoSymbol,                   8,             uparrow ] }; 
-    key <AD09> { [      NoSymbol,      NoSymbol,                   9,        dead_cedilla ] }; 
+    key <AD09> { [      NoSymbol,      NoSymbol,                   9,          numerosign ] }; 
     key <AD10> { [      NoSymbol,      NoSymbol,                plus,           plusminus ] }; 
-    
-    key <AC01> { [      NoSymbol,      NoSymbol,          underscore,               U218A ] }; 
-    key <AC02> { [      NoSymbol,      NoSymbol,         bracketleft,               U218B ] }; 
-    key <AC03> { [      NoSymbol,      NoSymbol,           braceleft,         Greek_sigma ] }; 
+
+    key <AC01> { [      NoSymbol,      NoSymbol,           semicolon,          numbersign ] }; 
+    key <AC02> { [      NoSymbol,      NoSymbol,               colon,          asciitilde ] }; 
+    key <AC03> { [      NoSymbol,      NoSymbol,           braceleft,             section ] }; 
     key <AC04> { [      NoSymbol,      NoSymbol,           parenleft,           trademark ] }; 
-    key <AC05> { [      NoSymbol,      NoSymbol,         asciicircum,          registered ] }; 
-    key <AC06> { [      NoSymbol,      NoSymbol,            asterisk,            Greek_mu ] }; 
+    key <AC05> { [      NoSymbol,      NoSymbol,         bracketleft,          registered ] }; 
+    key <AC06> { [      NoSymbol,      NoSymbol,            asterisk,            multiply ] }; 
     key <AC07> { [      NoSymbol,      NoSymbol,                   4,           leftarrow ] }; 
     key <AC08> { [      NoSymbol,      NoSymbol,                   5,           downarrow ] }; 
     key <AC09> { [      NoSymbol,      NoSymbol,                   6,          rightarrow ] }; 
-    key <AC10> { [      NoSymbol,      NoSymbol,               minus,          apostrophe ] }; 
-    //
-    key <LSGT> { [      NoSymbol,      NoSymbol,          numbersign,          asciitilde ] }; 
-    key <AB01> { [      NoSymbol,      NoSymbol,        bracketright,               U0292 ] }; 
+    key <AC10> { [      NoSymbol,      NoSymbol,               minus,          underscore ] }; 
+
+    key <LSGT> { [      NoSymbol,      NoSymbol,         asciicircum,               grave ] }; 
+    key <AB01> { [      NoSymbol,      NoSymbol,           ampersand,             notsign ] }; 
     key <AB02> { [      NoSymbol,      NoSymbol,          braceright,           copyright ] }; 
-    key <AB03> { [      NoSymbol,      NoSymbol,          parenright,                  at ] }; 
-    key <AB04> { [      NoSymbol,      NoSymbol,           ampersand,              emdash ] }; 
+    key <AB03> { [      NoSymbol,      NoSymbol,          parenright,           backslash ] }; 
+    key <AB04> { [      NoSymbol,      NoSymbol,        bracketright,                 bar ] }; 
     key <AB05> { [      NoSymbol,      NoSymbol,               grave,           brokenbar ] }; 
     key <AB06> { [      NoSymbol,      NoSymbol,                   0,              degree ] }; 
     key <AB07> { [      NoSymbol,      NoSymbol,                   1,  enfilledcircbullet ] }; 
     key <AB08> { [      NoSymbol,      NoSymbol,                   2,       lessthanequal ] }; 
     key <AB09> { [      NoSymbol,      NoSymbol,                   3,    greaterthanequal ] }; 
-    key <AB10> { [      NoSymbol,      NoSymbol,               slash,        questiondown ] }; 
+    key <AB10> { [      NoSymbol,      NoSymbol,               slash,            division ] }; 
 
     //  Alphanumeric section (number/symbol keys)
     key <TLDE> { [      NoSymbol,      NoSymbol,                 bar,          dead_grave ] }; 
@@ -216,8 +217,8 @@ xkb_symbols "symbols" {
     key <AE04> { [      NoSymbol,      NoSymbol,            EuroSign,                cent ] }; 
     key <AE05> { [      NoSymbol,      NoSymbol,                 yen,            currency ] }; 
     key <AE06> { [      NoSymbol,      NoSymbol,          onequarter,     dead_circumflex ] }; 
-    key <AE07> { [      NoSymbol,      NoSymbol,             onehalf,            onethird ] }; 
-    key <AE08> { [      NoSymbol,      NoSymbol,       threequarters,           twothirds ] }; 
+    key <AE07> { [      NoSymbol,      NoSymbol,             onehalf,        dead_cedilla ] }; 
+    key <AE08> { [      NoSymbol,      NoSymbol,       threequarters,         dead_macron ] }; 
     key <AE09> { [      NoSymbol,      NoSymbol, leftsinglequotemark, leftdoublequotemark ] }; 
     key <AE10> { [      NoSymbol,      NoSymbol,rightsinglequotemark,rightdoublequotemark ] }; 
     key <AE11> { [      NoSymbol,      NoSymbol,            multiply,            onesixth ] }; 
@@ -227,7 +228,7 @@ xkb_symbols "symbols" {
     key <AD12> { [      NoSymbol,      NoSymbol,      guillemotright,           0x100203a ] }; 
     //
     key <AC11> { [      NoSymbol,      NoSymbol,          dead_acute,      dead_diaeresis ] }; 
-    key <BKSL> { [      NoSymbol,      NoSymbol,          dead_tilde,          dead_tilde ] }; 
+    key <BKSL> { [      NoSymbol,      NoSymbol,          underscore,          dead_tilde ] }; 
     //
     key <SPCE> { [      NoSymbol,      NoSymbol,       nobreakspace,        nobreakspace ] };
 };

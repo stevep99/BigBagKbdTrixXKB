@@ -484,8 +484,8 @@ xkb_keycodes "modifiers-skp" {
     //<RALT> = 22;
     // Additional Shift on left-spacebar, custom mapping for Ergo Pro. 
     <MDSH> = 22;
-    // Define backspace on menu key.
-    <BKSP> = 135;
+    // Define backspace on right-control key.
+    <BKSP> = 105;
     // Define the Exend modifier (CapsLock) on the LeftAlt key.
     <CAPS> = 64;
     // Relocate LeftWin to the CapsLock key.
